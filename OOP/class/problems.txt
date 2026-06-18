@@ -1,0 +1,42 @@
+1. Create a class named book and add __init__ constructor method that accepts title, author, publisher and price as input parameters 
+and initialize them to private instance varables add an instance method purchase which receives number of copies as input 
+and initializes to private instance varable and computes total as price * no of copies . The total is stored in instance varable
+Now based on no of copies a discount is computed as follows :
+noc -- 1-100 -> No discount
+       100- - 200 -> 10%
+       200- - 300 -> 20%
+       300- - 400 -> 40%
+       >400 -> 50%
+
+discount should be stored in instance variable and count should be updated  in instance variable as total -= discount
+
+create an instance method display details and print complete information about book purchase 
+Book purchase Details:
+----------------------
+Book name 
+Author 
+Price 
+noc 
+discount 
+total 
+
+implement above task for purchase of one book with dynamic input data
+implement above task for purchase of n different books and output should be as follows :
+            purchase of Books Details:
+-----------------------------------------------------
+| BookName | Author | Price | Noc | discount | total |
+Java        A       12      120         ...         ...
+.
+.
+.
+No of Books 
+Grand Total
+
+Enter title :Python
+Enter Author :James
+Enter Publisher :Sun
+Enter price :1250
+Enter no of copies: 120
+------Purchase of Books Details-------
+| BookName | Author | Price | Noc | Discount | Total |
+Python|James|1250|120|10% |135000.0
