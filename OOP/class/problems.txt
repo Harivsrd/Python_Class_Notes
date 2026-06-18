@@ -40,3 +40,101 @@ Enter no of copies: 120
 ------Purchase of Books Details-------
 | BookName | Author | Price | Noc | Discount | Total |
 Python|James|1250|120|10% |135000.0
+
+
+
+
+class Book :
+    def __init__(self,title, author, publisher, price):
+        self.__title = title 
+        self.__author = author 
+        self.__publilsher = publisher 
+        self.__price = price
+        
+        
+    def computeDiscount(self, noc):
+        if noc > 400 :
+            return 50
+        elif noc > 300:
+            return 40
+        elif noc > 200:
+            return 20 
+        elif noc > 100:
+            return 10
+        else:
+            return "No Discount"
+        
+    def purchase(self,noc):
+        self.__noc = noc
+        self.total = self.__noc * self.__price
+        self.discount = self.computeDiscount(self.__noc)
+        self.total -= self.total * (self.discount/100)
+        
+    def display(self):
+        print("------Purchase of Books Details-------")
+        #print("| BookName | Author | Price | Noc | Discount | Total |")
+        #print(f"{self.__title}\t|{self.__author}\t|{self.__price}\t|{self.__noc}\t|{self.discount}% \t|{self.total}")
+        print("Title: ",self.__title)
+        print("Author :",self.__author)
+        print("Price :", self.__price)
+        print("No of copies :", self.__noc)
+        print("Discount :", self.discount,"%")
+        print("Total :", self.total)
+        
+title = input("Enter title :")
+author = input("Enter Author :")
+publisher = input("Enter Publisher :")
+price = int(input("Enter price :"))
+noc = int(input("Enter no of copies: "))
+b = Book(title, author, publisher, price)
+b.purchase(noc)
+b.display()
+
+while True:
+    print("Menu")
+
+
+Bank Account Tracker || Bank Account transaction Manager.
+Task 1: Create a bank account class with attributes account number 
+       name of the person and balance , balance default should be 0.
+       Account number for different accounts should be generated automatically sequentially 
+       name of the person is input assigned through constructor.
+2. Implement a method deposit which recieves amount as input and 
+   updates balance by adding amount to balance.
+3. Implement a method withdraw which receives amount as input and
+   updates balance by subtracting amount. If amount greater than available 
+   balance balance should not be updated and print a message 
+   "Insufficient Funds"
+4. Implement a method display to display complete details of account 
+   accno name balance 
+5. Implement a method check balance which prints only balance information 
+   
+Now implement above account tracker for one person as follows:
+Enter account details: personname .....
+Menu :
+1. Deposit 
+2. 
+3. 
+4. 
+
+4) implement above prorgam for multiple accounts as follows 
+Menu :
+1. Create new account 
+2. Deposit
+3. withdraw
+4. display
+5. check balance
+6. exit
+
+Enter account no :
+Enter amount :
+
+5) Shopping  cart 
+Task - 1 : Build a shopping Cart class 
+2. Use a constructor that uses a dictionary to maintain collection of items available
+   with items.
+3. Define a empty cart or basket 
+4. Implement a method add item which is used to add one item from dictionary to cart. 
+5. Implement remove item method which removes an items from cart.
+6. Implement a method order which is used to finalize order and computes total amount 
+   and stores the details of order 
