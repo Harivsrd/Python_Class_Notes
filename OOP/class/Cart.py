@@ -9,15 +9,14 @@ class Cart:
             return
         else:
             l = len(self.cart)+1
-            self.cart.append((id,self.items[id]))
+            self.cart.append(self.items[id])
         
     def remove_item(self, id):
-        for i,(item_id,item) in enumerate(self.cart):
-            if item_id == id:
-                self.cart.pop(i)
-                return
-        print("Item not in cart")
-            
+        if id > len(self.cart):
+            print("Check cart")
+            return
+        self.cart.pop(id)
+                    
     def compute_total(self):
         total = 0
         for i,item in self.cart:
@@ -40,8 +39,8 @@ class Cart:
             return
         print("Cart Items :")
         print("\tId | Product | Price ")
-        for item in self.cart:
-            print('\t',item[0],'\t|', item[1][0],'\t|', item[1][1],'\t|')
+        for id,item in enumerate(self.cart):
+            print('\t',id,'\t|', item[0],'\t|', item[1],'\t|')
         
         
 cart = Cart() 
