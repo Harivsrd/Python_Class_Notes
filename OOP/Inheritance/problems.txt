@@ -1,0 +1,17 @@
+Build a system for vehicle renting system.
+Create a base class vehicle and it should be initialized with attributes like vehicle name,brand,daily rate and no of days
+the vehicle class contains method to compute rent with formula -- daily rate * no of days 
+Now create a Car class and it inherits vehicle class and it stores extra parameter car type Ex: SUV Sedan HatchBack
+this class also contains method calculate override method this method excute parent class calculate method compute rental 
+value and depends on car type it modifies rental value by increasing certain amount.
+suv - 500
+sedan - 200 
+HatchBack - 0
+Now for n differnt cars  compute rental information store in a list now execute queries based on following menu
+    menu
+-------------
+1. DisplayAll
+2. Display by name 
+3. Display by cartype 
+4. Display highest rental car 
+5. exit 
