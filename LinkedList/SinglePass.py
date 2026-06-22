@@ -1,7 +1,7 @@
 import LinkedList
 
 def single_pass_method(root):
-    slow , fast = root, root
+    slow , fast = root, root.next
     while fast and fast.next :
         slow = slow.next 
         fast = fast.next.next 

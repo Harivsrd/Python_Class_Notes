@@ -1,0 +1,3 @@
+find all palindrome strings given an strings find all non single letter sub strings that all palindromes
+s = aabbbaa
+s = [aa,bb,bbb,abbba,aa,,,aa,bb,aa]

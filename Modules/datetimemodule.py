@@ -5,3 +5,4 @@ print("Current DateTime :",now)
 
 d = now.date()
 print("Date :",d)
+
