@@ -5,3 +5,6 @@
 5. Construct a BST of n nodes and find largest value in the tree.
 6. Construct a BST of n nodes and also we are given target x now find and return a pair in BST where sum == target.
 7. same  problem check whether pair exists or not.
+8. Construct a BST of n nodes and traverse them with 
+  i. level order traversal
+  ii. reverse level order traversal
