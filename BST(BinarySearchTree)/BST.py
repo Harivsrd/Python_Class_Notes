@@ -40,6 +40,7 @@ class BST:
             par.left = t
         else:
             par.right = t
+        return self.root
     
     def delete(self, root, x):
         if root is None:
@@ -109,6 +110,7 @@ class BST:
                 succ_par.left = succ.right
             else:
                 succ_par.right = succ.right
+        return self.root
 
     
     def find_min(self, node):
@@ -121,6 +123,19 @@ class BST:
             self.inorder(root.left)
             print(root.data, end=" ")
             self.inorder(root.right)
+            
+    def preorder(self, root):
+        if root:
+            print(root.data, end=" ")
+            self.preorder(root.left)
+            self.preorder(root.right)
+            
+    def postorder(self, root):
+        if root:
+            self.postorder(root.left)
+            self.postorder(root.right)
+            print(root.data, end=" ")
+            
 
             
         
