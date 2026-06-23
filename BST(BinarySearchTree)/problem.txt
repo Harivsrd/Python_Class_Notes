@@ -8,3 +8,13 @@
 8. Construct a BST of n nodes and traverse them with 
   i. level order traversal
   ii. reverse level order traversal
+
+
+now find kth largest and kth smallest element in BST.
+
+11. You are given BST (construxt a BST) of n elements you are also given n1 n2 now find LCA of n1 and n2 LCA means Lowest Common Ancestor.
+12. You are given sorted list as input now convert sorted list into BST 
+13. Your are you are also given x now find closest value of x in BST.
+14. with n values and find height of the tree solve with and without recursion.
+15. Construct two different BST find common elements b/n them.
+16. Given a BST and a value x now find floor and ceil of x in BST.
