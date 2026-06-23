@@ -1,0 +1,7 @@
+1. Implement a menu driven program for binary search tree , insert delete and DFT
+2. Construct a BST with n nodes print only leaf values.
+3. Construct a BST of n nodes find no of leaf nodes.
+4. Construct a BST of n nodes and find smallest value in the tree.
+5. Construct a BST of n nodes and find largest value in the tree.
+6. Construct a BST of n nodes and also we are given target x now find and return a pair in BST where sum == target.
+7. same  problem check whether pair exists or not.
